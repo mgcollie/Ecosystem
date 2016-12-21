@@ -485,7 +485,7 @@ def main(argv):
         env = Environment(tools)
         if ( env.success ):
             env.getEnv(os.environ)
-            build_type = os.getenv('PG_BUILD_TYPE')
+            build_type = os.getenv('PG_BUILD_TYPE', 'Debug')
             
             if not quick_build:
                 if force_rebuild:
