@@ -137,12 +137,14 @@ environment_seperator = ':'
 make_command = ['make','-j',str(number_of_processors)]
 clean_command = ['make','clean']
 make_target = 'Unix Makefiles'
+os.environ['PG_CMAKE_MODULE_PATH'] = '%s/dev/cmake' % (
+    os.path.dirname(__file__).replace('/bin', '').replace('\\','/'))
+
 if ( platform.system().lower() == 'windows' ):
     environment_seperator = ';'
     make_command = ['jom']
     clean_command = ['jom','clean']
     make_target = 'NMake Makefiles'
-    os.environ['PG_CMAKE_MODULE_PATH'] = 'C:/Development/ProjectManagement/Ecosystem/dev/cmake'
     
 class Variable:
     """Defines a variable required by a tool"""
