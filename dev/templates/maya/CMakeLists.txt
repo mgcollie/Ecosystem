@@ -21,6 +21,11 @@
 
 CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
 
+if(WIN32)
+    message(STATUS ">>> Adding \"Windows\" preprocessor definition")
+    ADD_DEFINITIONS(-DWindows)
+endif()
+
 set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake $ENV{PG_CMAKE_MODULE_PATH} )
   
 PROJECT ( example )
