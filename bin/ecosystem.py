@@ -142,6 +142,7 @@ if ( platform.system().lower() == 'windows' ):
     make_command = ['jom']
     clean_command = ['jom','clean']
     make_target = 'NMake Makefiles'
+    os.environ['PG_CMAKE_MODULE_PATH'] = 'C:/Development/ProjectManagement/Ecosystem/dev/cmake'
     
 class Variable:
     """Defines a variable required by a tool"""
@@ -415,7 +416,7 @@ def listAvailableTools():
             if new_tool.version != '':
                 tool_name = tool_name + new_tool.version
             if tool_name not in tool_list:
-                tool_list.append(tool_name)
+                tol_list.append(tool_name)
                     
     tool_list.sort()
     
@@ -495,7 +496,7 @@ def main(argv):
                     except IOError:
                         print 'Cache doesnt exist...'
 
-                call_process(['cmake','-DCMAKE_BUILD_TYPE='+build_type,'-G', make_target, '..'])
+                call_process(['cmake','-DCMAKE_BUILD_TYPE='+build_type,'-G', make_target,])
             
             if deploy:
                 make_command.append("package")
