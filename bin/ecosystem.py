@@ -418,7 +418,7 @@ def listAvailableTools():
             if new_tool.version != '':
                 tool_name = tool_name + new_tool.version
             if tool_name not in tool_list:
-                tol_list.append(tool_name)
+                tool_list.append(tool_name)
                     
     tool_list.sort()
     
@@ -443,8 +443,8 @@ def call_process(arguments):
 		subprocess.call(arguments, shell=True)
 	else:
 		subprocess.call(arguments)
-		
-def main(argv):                         
+
+def main(argv):
     try:                                
         opts, args = getopt.getopt(argv, "fmht:lbr:sd", ["force","make","help","tools=","listtools","build","run","setenv","deploy"]) 
     except getopt.GetoptError:           
