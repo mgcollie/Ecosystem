@@ -1,2 +1,3 @@
 @ECHO OFF
-python %ECO_ENV%/../bin/ecosystem.py %*
+pythonw %ECO_ENV%/../bin/ecosystem.py %*
+pause

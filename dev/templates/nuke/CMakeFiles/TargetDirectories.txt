@@ -1,0 +1,3 @@
+C:/Development/ProjectManagement/Ecosystem/dev/templates/nuke/CMakeFiles/example.dir
+C:/Development/ProjectManagement/Ecosystem/dev/templates/nuke/CMakeFiles/edit_cache.dir
+C:/Development/ProjectManagement/Ecosystem/dev/templates/nuke/CMakeFiles/rebuild_cache.dir

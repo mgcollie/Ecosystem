@@ -1,0 +1,8 @@
+C:/Development/ProjectManagement/Ecosystem/dev/templates/maya/CMakeFiles/list_install_components.dir
+C:/Development/ProjectManagement/Ecosystem/dev/templates/maya/CMakeFiles/example.dir
+C:/Development/ProjectManagement/Ecosystem/dev/templates/maya/CMakeFiles/edit_cache.dir
+C:/Development/ProjectManagement/Ecosystem/dev/templates/maya/CMakeFiles/package_source.dir
+C:/Development/ProjectManagement/Ecosystem/dev/templates/maya/CMakeFiles/package.dir
+C:/Development/ProjectManagement/Ecosystem/dev/templates/maya/CMakeFiles/install.dir
+C:/Development/ProjectManagement/Ecosystem/dev/templates/maya/CMakeFiles/rebuild_cache.dir
+C:/Development/ProjectManagement/Ecosystem/dev/templates/maya/CMakeFiles/install/local.dir
