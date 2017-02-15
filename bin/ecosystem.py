@@ -488,6 +488,10 @@ def main(argv):
         env = Environment(tools)
         if ( env.success ):
             env.getEnv(os.environ)
+            from pprint import pprint as pp
+            print('*' * 55)
+            pp(dict(os.environ))
+            print('*' * 55)
             build_type = os.getenv('PG_BUILD_TYPE', 'Debug')
             
             if not quick_build:
